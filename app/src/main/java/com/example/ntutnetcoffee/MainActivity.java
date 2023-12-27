@@ -2,6 +2,7 @@ package com.example.ntutnetcoffee;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
         mSnake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new  Intent();
+                intent.setClass(MainActivity.this, MainActivity_snake_1.class);
+                startActivity(intent);
             }
         });
 
