@@ -20,7 +20,12 @@ public class MainActivity_snake_1 extends AppCompatActivity {
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new  Intent();
+                intent.setClass(MainActivity_snake_1.this, MainActivity_snake_2.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("id",tv_id.getText().toString());
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
     }
