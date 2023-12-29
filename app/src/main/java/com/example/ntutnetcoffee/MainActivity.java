@@ -37,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
         mOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                Intent intent = new  Intent();
+                intent.setClass(MainActivity.this, MainActivity_order_main.class);
+                startActivity(intent);
             }
         });
     }
