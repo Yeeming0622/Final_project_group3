@@ -13,6 +13,15 @@
         android:theme="@style/Theme.NTUTNetCoffee"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity_airplane_2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_snake_2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_airplane_1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity_snake_1"
             android:exported="false" />
         <activity
