@@ -13,6 +13,9 @@
         android:theme="@style/Theme.NTUTNetCoffee"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity_snake_3"
+            android:exported="false" />
+        <activity
             android:name=".FoodList"
             android:exported="false" />
         <activity
@@ -23,8 +26,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity_order_main"
-             android:exported="false" />
-       <activity
+            android:exported="false" />
+        <activity
             android:name=".MainActivity_airplane_2"
             android:exported="false" />
         <activity
