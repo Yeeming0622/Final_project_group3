@@ -23,6 +23,15 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity_order_main"
+             android:exported="false" />
+       <activity
+            android:name=".MainActivity_airplane_2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_snake_2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_airplane_1"
             android:exported="false" />
         <activity
             android:name=".MainActivity_snake_1"
