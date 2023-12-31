@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools" >
 
     <application
+        android:name=".Value"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -27,7 +28,8 @@
         <activity
             android:name=".MainActivity_order_main"
             android:exported="false" />
-        <activity
+            android:parentActivityName=".MainActivity"/>
+       <activity
             android:name=".MainActivity_airplane_2"
             android:exported="false" />
         <activity
