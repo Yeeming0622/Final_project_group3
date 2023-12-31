@@ -4,17 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:hapticFeedbackEnabled="false"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
+        android:gravity="center"
         android:text="北科小網咖"
-        android:textSize="40dp"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="70dp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,6 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:text="遊戲列表"
+        android:textColor="#000000"
+        android:textStyle="bold"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -31,22 +39,24 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
+        android:id="@+id/Airplane"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:backgroundTint="#2DB323"
+        android:text="飛機射擊遊戲"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:text="飛機射擊遊戲"
-        android:textSize="30dp"
-        android:id="@+id/Airplane"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/Snake"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:backgroundTint="#2DB323"
         android:text="貪食蛇"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,10 +67,12 @@
         android:id="@+id/Order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#314BCC"
         android:text="點餐系統"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Snake"
         app:layout_constraintVertical_bias="1.0" />
