@@ -17,6 +17,9 @@
             android:name=".MainActivity_airplane_3"
             android:exported="false" />
         <activity
+            android:name=".MainActivity_snake_3"
+            android:exported="false" />
+        <activity
             android:name=".FoodList"
             android:exported="false" />
         <activity

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_snake_3">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#3F51B5"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/snake" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0000"
+            android:gravity="center"
+            android:text="貪食蛇"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回到開始"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="得分:"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_re"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id3" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分數"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id3" />
+
+    <TextView
+        android:id="@+id/tv_id3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_re"
+        app:layout_constraintStart_toStartOf="@+id/btn_re"
+        app:layout_constraintTop_toBottomOf="@+id/btn_re" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
