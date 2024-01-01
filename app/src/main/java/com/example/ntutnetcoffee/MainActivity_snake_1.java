@@ -34,6 +34,7 @@ public class MainActivity_snake_1 extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        moveTaskToBack(true);
+        Intent intent = new Intent(MainActivity_snake_1.this, MainActivity.class);
+        startActivity((intent));
     }
 }

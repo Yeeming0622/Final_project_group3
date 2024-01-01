@@ -39,11 +39,6 @@ public class MainActivity_snake_2 extends AppCompatActivity implements View.OnCl
             }
         });
     }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        moveTaskToBack(true);
-    }
 
     @Override
     public void onClick(View v) {
