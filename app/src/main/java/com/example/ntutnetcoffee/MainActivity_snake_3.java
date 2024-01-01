@@ -36,15 +36,11 @@ public class MainActivity_snake_3 extends AppCompatActivity implements Listener{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity_snake_3.this, MainActivity_snake_2.class);
+                intent.setClass(MainActivity_snake_3.this, MainActivity_snake_1.class);
                 startActivity(intent);
             }
         });
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        moveTaskToBack(true);
-    }
+
 }
