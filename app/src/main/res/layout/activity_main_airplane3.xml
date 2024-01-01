@@ -7,4 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity_airplane_3">
 
+  <Button
+      android:id="@+id/back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="50dp"
+      android:layout_marginBottom="20dp"
+      android:text="返回首頁"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.929"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ListView
+      android:id="@+id/listView"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
+      app:layout_constraintBottom_toTopOf="@+id/back"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/delete"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="88dp"
+      android:text="刷新"
+      app:layout_constraintBottom_toBottomOf="@+id/back"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/listView"
+      app:layout_constraintVertical_bias="0.0" />
+
   </androidx.constraintlayout.widget.ConstraintLayout>
