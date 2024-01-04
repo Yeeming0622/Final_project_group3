@@ -224,7 +224,7 @@ public class TKView extends View {
             case 1:
                 blood = 5;
                 blood_level = blood;
-                bomb_num = 10;
+                bomb_num = 5;
                 enemey_num = 7;
                 break;
             case 2:
@@ -284,7 +284,7 @@ public class TKView extends View {
                                 for (int j = 0; j < points.size(); j++) {
                                     Point p = getCollidePoint(x, y, points.get(j).x, points.get(j).y);
                                     if (p != null) {
-                                        blasts.add(new Point((x + points.get(j).x) / 2, (y + points.get(j).y) / 2));
+                                        blasts.add(new Point(points.get(j).x, points.get(j).y));
                                         points.remove(j);
                                         j--;
                                         enemys.remove(i);

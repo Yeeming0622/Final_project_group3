@@ -90,14 +90,6 @@ public class MainActivity_airplane_3 extends AppCompatActivity {
                             + c.getString(0) + "'");
                     c.moveToNext();
                 }
-                //刪除分數(較完善)
-                /*
-                for (int i = 0; i < c.getCount(); i++) {
-                    dbrw.execSQL(" DELETE FROM myTable WHERE score LIKE '"
-                             +c.getString(1)+ "'");
-                    c.moveToNext();
-                }
-                 */
                 //跳轉業面到第一頁
                 startActivityForResult(new Intent(MainActivity_airplane_3.this,
                         MainActivity_airplane_1.class), 1);
